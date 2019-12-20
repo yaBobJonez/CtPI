@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="640" styleClass="">
+  <children>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="bgpanel" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="480" prefWidth="640" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="8" layoutY="8" prefHeight="48" prefWidth="624" styleClass="label " text="Characters To Pixels Image" textAlignment="LEFT" textFill="#1a3399" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="30"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="240" layoutY="48" prefHeight="32" prefWidth="40" styleClass="label " text="By" textAlignment="LEFT" textFill="#b31a1a" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="16"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+        <ListViewEx editable="false" fixedCellSize="-1" focusTraversable="true" id="ctpnconfig" layoutX="24" layoutY="120" prefHeight="336" prefWidth="216" styleClass="list-view ">
+          <items xmlns:fx="http://javafx.com/fxml">
+            <FXCollections fx:factory="observableArrayList"/>
+          </items>
+        </ListViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-ctpnconfig" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="24" layoutY="88" prefHeight="32" prefWidth="216" styleClass="label " text="Current CtPN configuration:" textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="15"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="back" layoutX="456" layoutY="416" prefHeight="40" prefWidth="160" styleClass="button " text="Back" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="16"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-back" visible="1"/>
+        <Hyperlink alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="link" layoutX="264" layoutY="48" prefHeight="32" prefWidth="144" styleClass="hyperlink " text="ya_Bob_Jonez" textAlignment="LEFT" wrapText="false">
+          <font>
+            <Font name="System Bold" size="16"/>
+          </font>
+        </Hyperlink>
+        <Data cursor="DEFAULT" enabled="1" id="data-link" visible="1"/>
+        <ComboBox editable="false" focusTraversable="true" id="outtype" layoutX="264" layoutY="120" prefHeight="40" prefWidth="104" promptText="" style="-fx-font-size: 14px; -fx-font-weight: bold;" styleClass="combo-box-base combo-box " value="png" visibleRowCount="10">
+          <items xmlns:fx="http://javafx.com/fxml">
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="png"/>
+              <String fx:value="jpeg"/>
+              <String fx:value="gif"/>
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Data cursor="DEFAULT" enabled="1" id="data-outtype" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="264" layoutY="88" prefHeight="32" prefWidth="96" styleClass="label " text="Output type:" textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="15"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label4" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label5" layoutX="264" layoutY="168" prefHeight="32" prefWidth="104" styleClass="label " text="Pixels spacing:" textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="15"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label5" visible="1"/>
+        <Separator focusTraversable="false" id="separator" layoutX="8" layoutY="80" orientation="HORIZONTAL" prefHeight="8" prefWidth="624" styleClass="separator "/>
+        <Data cursor="DEFAULT" enabled="1" id="data-separator" visible="1"/>
+        <org.develnext.jphp.ext.javafx.support.control.NumberSpinner alignment="CENTER_LEFT" arrowsStyle="SPLIT_HORIZONTAL" editable="false" focusTraversable="true" id="pxspacing" initial="1" layoutX="264" layoutY="200" max="7" min="1" prefHeight="32" prefWidth="104" step="1" style="-fx-font-size: 14px; -fx-font-weight: bold;" styleClass="spinner split-arrows-horizontal "/>
+        <Data cursor="DEFAULT" enabled="1" id="data-pxspacing" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label6" layoutX="392" layoutY="88" prefHeight="32" prefWidth="240" styleClass="label " text="Clear prev. text on &quot;Open&quot;:" textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="15"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label6" visible="1"/>
+        <ToggleButton alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="clearonopen" layoutX="392" layoutY="120" prefHeight="40" prefWidth="192" selected="true" styleClass="toggle-button " text="Toggle to (de-)select" textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="14"/>
+          </font>
+        </ToggleButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-clearonopen" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-bgpanel" visible="1"/>
+  </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="640" styleClass="">
+  <children>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="bgpanel" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="480" prefWidth="640" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <TextArea editable="true" focusTraversable="true" id="text" layoutX="8" layoutY="8" prefColumnCount="40" prefHeight="128" prefWidth="624" promptText="Text here..." styleClass="text-input text-area " text="" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </TextArea>
+        <Data cursor="DEFAULT" enabled="1" id="data-text" visible="1"/>
+        <org.develnext.jphp.ext.javafx.support.control.CanvasEx focusTraversable="false" height="328" id="canvas" layoutX="8" layoutY="144" styleClass="" width="448"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-canvas" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="generate" layoutX="464" layoutY="144" prefHeight="40" prefWidth="168" styleClass="button " text="Generate" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="16"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-generate" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="save" layoutX="464" layoutY="208" prefHeight="40" prefWidth="168" styleClass="button " text="Save" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="16"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-save" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="open" layoutX="464" layoutY="256" prefHeight="40" prefWidth="168" styleClass="button " text="Open" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="16"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-open" visible="1"/>
+        <Separator focusTraversable="false" id="separator" layoutX="464" layoutY="192" orientation="HORIZONTAL" prefHeight="8" prefWidth="168" styleClass="separator "/>
+        <Data cursor="DEFAULT" enabled="1" id="data-separator" visible="1"/>
+        <Separator focusTraversable="false" id="separatorAlt" layoutX="464" layoutY="304" orientation="HORIZONTAL" prefHeight="8" prefWidth="168" styleClass="separator "/>
+        <Data cursor="DEFAULT" enabled="1" id="data-separatorAlt" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="usesrl" layoutX="464" layoutY="320" prefHeight="40" prefWidth="168" styleClass="button " text="Use SRL" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="16"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-usesrl" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="usecustom" layoutX="464" layoutY="368" prefHeight="40" prefWidth="168" styleClass="button " text="Inject RL" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="16"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-usecustom" visible="1"/>
+        <Separator focusTraversable="false" id="separator3" layoutX="464" layoutY="416" orientation="HORIZONTAL" prefHeight="8" prefWidth="168" styleClass="separator "/>
+        <Data cursor="DEFAULT" enabled="1" id="data-separator3" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="more" layoutX="568" layoutY="432" prefHeight="40" prefWidth="64" styleClass="button " text="More" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="16"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-more" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="clear" layoutX="464" layoutY="432" prefHeight="40" prefWidth="96" styleClass="button " text="Clear" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="16"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-clear" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-bgpanel" visible="1"/>
+  </children>
+</AnchorPane>
