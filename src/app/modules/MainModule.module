@@ -1,6 +1,18 @@
 {
   "props": [],
   "components": {
+    "openctpn": {
+      "type": "script\\FileChooserScript",
+      "x": 176,
+      "y": 64,
+      "props": {
+        "filterName": "Characters To Pixels Notation",
+        "filterExtensions": "*.ctpn",
+        "filterAny": "0",
+        "inputNode": "",
+        "actionNode": "usecustom"
+      }
+    },
     "saveectp": {
       "type": "script\\FileChooserScript",
       "x": 288,
@@ -13,18 +25,6 @@
         "filterAny": "0",
         "inputNode": "",
         "actionNode": "save"
-      }
-    },
-    "openctpn": {
-      "type": "script\\FileChooserScript",
-      "x": 176,
-      "y": 64,
-      "props": {
-        "filterName": "Characters To Pixels Notation",
-        "filterExtensions": "*.ctpn",
-        "filterAny": "0",
-        "inputNode": "",
-        "actionNode": "usecustom"
       }
     },
     "openectp": {
