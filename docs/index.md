@@ -20,5 +20,5 @@ Have a nice day!
 
 ----------
 <span class="fs-8">
-[Downloads](../docs/downloads.md){: .btn .btn-blue}
+[Downloads](https://yabobjonez.github.io/CtPI/downloads.html){: .btn .btn-blue}
 </span>
