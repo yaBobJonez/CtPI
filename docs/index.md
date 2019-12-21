@@ -17,3 +17,7 @@ Have a nice day!
 - [ ] Smart pixels redistribution system
 - [X] Decorational spacing ;)
 - [X] Easy-to-edit JSON config
+
+<span class="fs-8">
+[Downloads](../docs/downloads.md){: .btn .btn-blue}
+</span>
